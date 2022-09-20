@@ -10,4 +10,4 @@ Jason's Employee Tracker
   
 
   ## Link to my repository
-<a href="https://github.com/jrettinger/team-profile-generator" target= blank>Link to my repository</a>
+<a href="https://github.com/jrettinger/employee-tracker" target= blank>Link to my repository</a>
