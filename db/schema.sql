@@ -17,7 +17,6 @@ CREATE TABLE employee (
   last_name VARCHAR(30) NOT NULL,
   role_id INT NOT NULL,
   manager_id INT
-  
 );
 
 /* Table structure for table role */
@@ -27,7 +26,4 @@ CREATE TABLE role (
   title VARCHAR(30) NOT NULL,
   salary decimal(10,0) NOT NULL,
   department_id INT NOT NULL
-  FOREIGN KEY (department_id)
-  REFERENCES department(id)
-  ON DELETE SET NULL
-;)
+);
