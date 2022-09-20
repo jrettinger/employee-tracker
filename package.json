@@ -4,13 +4,12 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-      "start": "node index.js"
+        "start": "node index.js"
     },
     "keywords": [],
     "license": "ISC",
     "dependencies": {
-      "inquirer": "^8.2.4",
-      "mysql2": "^2.3.3"
+        "inquirer": "^8.2.4",
+        "mysql2": "^2.3.3"
     }
-  }
-  
+}
