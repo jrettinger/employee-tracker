@@ -1,3 +1,5 @@
+USE mycompany_db;
+
 INSERT INTO department (id, name) VALUES
 (1, "Human Resources"),
 (2, "Research & Development"),
