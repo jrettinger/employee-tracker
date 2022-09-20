@@ -10,15 +10,6 @@ CREATE TABLE department (
   name VARCHAR(30) NOT NULL
 );
 
-/* Table structure for table employee */
-CREATE TABLE employee (
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  first_name VARCHAR(30) NOT NULL,
-  last_name VARCHAR(30) NOT NULL,
-  role_id VARCHAR(30) NOT NULL,
-  manager_id VARCHAR(30)
-);
-
 /* Table structure for table role */
 
 CREATE TABLE role (
@@ -26,4 +17,12 @@ CREATE TABLE role (
   title VARCHAR(30) NOT NULL,
   salary decimal(10,0) NOT NULL,
   department_id INT NOT NULL
+);
+/* Table structure for table employee */
+CREATE TABLE employee (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(30) NOT NULL,
+  last_name VARCHAR(30) NOT NULL,
+  role_id INT NOT NULL,
+  manager_id INT
 );
