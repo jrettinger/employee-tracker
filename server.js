@@ -95,3 +95,36 @@ const getDepartments = function () {
         );
       });
   };
+
+  const addRole = function () {
+    inquirer
+      .prompt([
+        {
+          type: "input",
+          name: "name",
+          message: "Enter name",
+        },
+        {
+          type: "input",
+          name: "salary",
+          message: "Enter salary",
+        },
+        {
+          type: "input",
+          name: "department",
+          message: "Enter department",
+        },
+      ])
+      .then((answers) => {
+        let { name, salary, department } = answers;
+        connection.query(
+          "INSERT INTO `role` (title, salary, department_id) VALUES (?, ?, ?)",
+          [name, salary, department],
+          function (err, results) {
+            if (err) throw new Error(err);
+            console.log("Role Added");
+            main();
+          }
+        );
+      });
+  };
