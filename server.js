@@ -22,3 +22,15 @@ const getDepartments = function () {
       }
     );
   };
+
+  const getEmployees = function () {
+    connection.query(
+      "SELECT employee.id, first_name, last_name, role_id, manager_id, role.title, role.salary, role.department_id FROM `employee` INNER JOIN `role` ON (employee.role_id=role.id)",
+      function (err, results) {
+        if (err) throw new Error(err);
+        console.table(results);
+        main();
+      }
+    );
+  };
+  
